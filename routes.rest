@@ -1,0 +1,40 @@
+### Example GET request
+GET localhost:3000/contacts/
+Returns: application/json
+
+### Example GET request
+POST localhost:3000/contacts/66ea5894584c2c30367f9d77
+Returns: application/json
+
+{
+  "_id": {
+    "$oid": "66ea5894584c2c30367f9d77"
+  },
+  "firstName": "Bob",
+  "lastName": "Smith",
+  "email": "bob@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "01/01/2001"
+}
+
+{
+  "_id": {
+    "$oid": "66ea58a2584c2c30367f9d79"
+  },
+  "firstName": "Jane",
+  "lastName": "Johnson",
+  "email": "jane@gmail.com",
+  "favoriteColor": "red",
+  "birthday": "02/02/2020"
+}
+
+{
+  "_id": {
+    "$oid": "66ea58ac584c2c30367f9d7b"
+  },
+  "firstName": "Chad",
+  "lastName": "Thompson",
+  "email": "chad@gmail.com",
+  "favoriteColor": "yellow",
+  "birthday": "03/03/2003"
+}

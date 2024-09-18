@@ -1,10 +1,9 @@
-const router = require('express').Router();
+const routes = require('express').Router();
+const controller = require('../controllers/index.js');
 
-// const indexController = require('../controllers/index.js')
 
-router.get('/', (req, res) => { res.send("hello!")})
-// router.use('/contacts', require('./contacts'))
+routes.get('/', controller.base);
 
-module.exports = {
-    router
-}
+routes.use('/contacts', require('./contacts.js'))
+
+module.exports = routes;
