@@ -1,8 +1,36 @@
 ### the request below returns html text indicating this url serves as a, "Contacts API"
 GET localhost:3000/
 
-### the request below returns a json object with all contacts data. JSON data comes from a connected Mongodb Database.
-GET localhost:3000/contacts/
+###
+GET http://localhost:3000/contacts/ HTTP/1.1
 
-### the request below returns a json object with a single contact with the following contact ID, 66ea5894584c2c30367f9d77. JSON data comes from a connected Mongodb Database.
-GET localhost:3000/contacts/66ea5894584c2c30367f9d77
+###
+GET http://localhost:3000/contacts/66ea5894584c2c30367f9d77 HTTP/1.1
+
+###
+POST http://localhost:3000/contacts/ HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Craig",
+  "lastName": "Freeze",
+  "email": "craig@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "05/08/2002"
+}
+
+###
+PUT http://localhost:3000/contacts/66ea58ac584c2c30367f9d7b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Brad",
+    "lastName": "Thompson",
+    "email": "chad@gmail.com",
+    "favoriteColor": "yellow",
+    "birthday": "03/03/2003"
+}
+
+###
+DELETE http://localhost:3000/contacts/66ede04e3f77499c51082dbd HTTP/1.1
+

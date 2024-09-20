@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const bodyParser = require('body-parser')
 const mongodb = require('./data/database.js');
 const port = 3000;
 
@@ -8,8 +8,9 @@ const port = 3000;
 // app.use('/', require('./routes/index.js'));
 
 // app.get('/', (req, res)=>{ res.send("hello")});
-app.use('/', require('./routes/index.js'));
 
+app.use(bodyParser.json())
+app.use('/', require('./routes/index.js'));
 
 // Server Start
 mongodb.initDb((err, mongodb) => {
