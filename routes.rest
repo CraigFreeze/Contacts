@@ -1,8 +1,8 @@
+### the request above returns html text indicating this url serves as a, "Contacts API"
 GET localhost:3000/
-# the request above returns html text indicating this url serves as a, "Contacts API"
 
+### the request above returns a json object with all contacts data. JSON data comes from a connected Mongodb Database.
 GET localhost:3000/contacts/
-# the request above returns a json object with all contacts data. JSON data comes from a connected Mongodb Database.
 
+### the request above returns a json object with a single contact with the following contact ID, 66ea5894584c2c30367f9d77. JSON data comes from a connected Mongodb Database.
 GET localhost:3000/contacts/66ea5894584c2c30367f9d77
-# the request above returns a json object with a single contact with the following contact ID, 66ea5894584c2c30367f9d77. JSON data comes from a connected Mongodb Database.
