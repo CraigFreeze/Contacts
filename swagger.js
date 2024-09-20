@@ -5,8 +5,8 @@ const doc = {
         title: "Users Api",
         description: 'Users Api'
     },
-    host: 'localhost:3000',
-    schemes: ['http']
+    host: 'contacts-cv19.onrender.com',
+    schemes: ['https']
 };
 
 const outputFile = './swagger.json';
