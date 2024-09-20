@@ -1,6 +1,7 @@
 const routes = require('express').Router();
-const controller = require('../controllers/index.js');
 
+routes.use('/', require('./swagger'));
+const controller = require('../controllers/index.js');
 
 routes.get('/', controller.base);
 
